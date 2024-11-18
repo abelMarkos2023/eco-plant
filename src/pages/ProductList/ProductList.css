@@ -1,0 +1,30 @@
+.list{
+    padding: 2rem;
+    background-color: #DDD;
+    opacity: 0.8;
+    max-width: 100vw;
+}
+.list-title{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    color: teal;
+}
+.list-items{
+    max-width: 90vw;
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+    gap: 1rem;
+}
+
+@media screen and (width < 60rem) {
+    .list-items{
+        max-width: 90vw;
+        margin-inline: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+        gap: 1rem;
+    }
+}

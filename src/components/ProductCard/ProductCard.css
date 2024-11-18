@@ -1,0 +1,73 @@
+.card{
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 1px 4px 8px rgba(0,0,0,0.3);
+    border-radius: 1rem;
+}
+.img-container{
+    width: 100%;
+    overflow: hidden;
+    flex: 1.6;
+    border-radius: 1rem;
+}
+.img-container img{
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    object-fit: cover;
+    transition: all 400ms ease-in-out;
+}
+.img-container img:hover{
+    scale: 1.3;
+}
+.text-container{
+    flex: 1;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.4rem;
+
+}
+.text-container h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text-container p{
+    font-size: 1rem;
+    line-height: 1;
+    letter-spacing: 1.3;
+    color: black;
+    opacity: 0.8;
+    text-align: justify;
+}
+.text-container h3{
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold;
+    color: teal
+}
+.text-container button{
+    border: none;
+    background-color: #417432;
+    padding: 0.8rem 2rem;
+    border-radius: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+.text-container button:hover{
+    background-color: #598f49;
+}
+.text-container button:disabled{
+    background-color: #27441f;
+    cursor: not-allowed;
+}
